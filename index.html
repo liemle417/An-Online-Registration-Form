@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Project 3: An Online Registration Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+            <h3>THE CODE REVIEW</h3>
+            <div>
+                <p class="intro">Signup for our newsletter</p>
+                <p class="doubleLine">Get the latest news on how your code is doing right in your inbox</p>
+            </div>
+
+        <form action="index.html" method="post">
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="first_section">
+
+                    <label>Full Name</label>
+                    <input required type="text" id="name" name="user_name" placeholder="Required"><br>
+
+                    <label>Email Address</label>
+                    <input required type="text" id="email" name="user_email" placeholder="Required"><br>
+
+                    <label>Phone Number</label>
+                    <input type="text" id="phone" name="user_phone">
+
+                    <label>Street Address</label>
+                    <input type="text" id="address" name="user_name">
+
+                    <label>City</label>
+                    <input type="text" id="city" name="user_name">
+
+                    <label for="states">State</label>
+                        <select id="states" name="all_states">
+                            <option>Choose State</option>
+                            <option>Alabama</option>
+                            <option>Alaska</option>
+                            <option>Arizona</option>
+                            <option>Arkansas</option>
+                            <option>California</option>
+                            <option>Colorado</option>
+                            <option>Connecticut</option>
+                            <option>Delaware</option>
+                            <option>Florida</option>
+                            <option>Georgia</option>
+                            <option>Hawaii</option>
+                            <option>Idaho</option>
+                            <option>Illinois</option>
+                            <option>Indiana</option>
+                            <option>Iowa</option>
+                            <option>Kansas</option>
+                            <option>Kentucky</option>
+                            <option>Louisiana</option>
+                            <option>Maine</option>
+                            <option>Maryland</option>
+                            <option>Massachusetts</option>
+                            <option>Michigan</option>
+                            <option>Minnesota</option>
+                            <option>Mississippi</option>
+                            <option>Missouri</option>
+                            <option>Montana</option>
+                            <option>Nebraska</option>
+                            <option>Nevada</option>
+                            <option>New Hampshire</option>
+                            <option>New Jersey</option>
+                            <option>New Mexico</option>
+                            <option>New York</option>
+                            <option>North Carolina</option>
+                            <option>North Dakota</option>
+                            <option>Ohio</option>
+                            <option>Oklahoma</option>
+                            <option>Oregon</option>
+                            <option>Pennsylvania</option>
+                            <option>Rhode Island</option>
+                            <option>South Carolina</option>
+                            <option>South Dakota</option>
+                            <option>Tennessee</option>
+                            <option>Texas</option>
+                            <option>Utah</option>
+                            <option>Vermont</option>
+                            <option>Virginia</option>
+                            <option>Washington</option>
+                            <option>West Virginia</option>
+                            <option>Wisconsin</option>
+                            <option>Wyoming</option>
+                        </select>
+
+                    <label>Zip Code</label>
+                    <input type="text" id="zipcode" name="user_zipcode">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Newsletter</legend>
+                    <label>Select the newsletters you would like to receive</label>
+
+                    <input type="checkbox" id="htmlNews" name="user_checkbox" value="htmlNews"><label for="htmlNews" class="text_style">HTML News</label><br>
+                    <input type="checkbox" id="cssNews" name="user_checkbox" value="cssNews"><label for="cssNews" class="text_style">CSS News</label><br>
+                    <input type="checkbox" id="jsNews" name="user_checkbox" value="jsNews"><label for="jsNews" class="text_style">Javascript News</label><br>
+
+                    <label>Newsletter format</label>
+
+                    <input type="radio" id="htmlRadio" name="user_radio" value="htmlRadio"><label for="htmlRadio" class="text_style">HTML</label><br>
+                    <input type="radio" id="plainTextRadio" name="user_radio" value="plaintextRadio"><label for="plainTextRadio" class="text_style">Plain text</label>
+
+                    <p>Other topics you'd like to hear about</p>
+                    <textarea id="others" name="user_other_topic"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <button type="submit">Sign Up</button>
+                <div class="bottom_note">Copyright The Code Review</div>
+            </fieldset>
+        </form>
+    </body>
+</html>
