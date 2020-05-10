@@ -439,10 +439,6 @@ button:hover::before{
 
 @media(min-width: 768px){
 
-    html:root{
-        max-width: 1400px;
-    }
-
     .first_section{
         width: 100%;
         display: inline-flex;
