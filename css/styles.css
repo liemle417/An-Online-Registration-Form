@@ -447,11 +447,11 @@ button:hover::before{
     }
 
     .first_section label{
-        flex:15%;
+        flex-basis:15%;
     }
 
     .first_section input,
     .first_section select{
-        flex: 85%;
+        flex-basis: 85%;
     }
 }
