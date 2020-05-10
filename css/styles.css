@@ -439,19 +439,31 @@ button:hover::before{
 
 @media(min-width: 768px){
 
+    html:root{
+        max-width: 1400px;
+    }
+
     .first_section{
+        width: 100%;
         display: inline-flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;   
+        justify-content: flex-start;
     }
 
     .first_section label{
-        flex-basis:15%;
+        flex-basis:20%;
     }
 
-    .first_section input,
+    .first_section input:not([id="zipcode"]),
     .first_section select{
-        flex-basis: 85%;
+        flex-basis: 75%;
+    }
+
+    input[id="zipcode"]{
+        flex-grow: 0;
+        flex-basis: 200px;
+        margin-right: auto;
     }
 }
