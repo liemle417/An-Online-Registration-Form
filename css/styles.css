@@ -3,7 +3,7 @@
 }
 
 body{
-    width: 100%;
+    max-width: 1140px;
     display:flex;
     flex:1;
     flex-direction: column;
@@ -114,13 +114,17 @@ div{
 /*Set the placeholder to the right*/
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
-input[type="tel"]::placeholder,
-input[type="number"]::placeholder{
+input[type="tel"]::placeholder{
     font-style: italic;
     text-align: right;
     color: rgb(175, 174, 174);
 }
 
+textarea[id="others"]{
+    color: rgb(175, 174, 174);
+    font-style: italic;
+    padding: 15px;
+}
 
 /*Make a doubleline in CSS*/
 .doubleLine{
@@ -182,7 +186,7 @@ select[id="states"]{
 
 
 input[name="user_zipcode"]{
-    width: 40%;
+    width: 200px;
 }
 
 
@@ -210,7 +214,7 @@ input:focus,
 select:focus,
 textarea:focus{
     border: 2px solid rgb(29, 48, 156);
-    border-left: 10px solid rgb(29, 48, 156);
+    border-left: 6px solid rgb(29, 48, 156);
     outline: none;
     transition: 0.8s;
     background-color: white;
@@ -443,9 +447,6 @@ button:hover::before{
 
 
 @media(min-width: 768px){
-    body{
-        max-width: 1140px;
-    }
 
     .first_section{
         width: 100%;

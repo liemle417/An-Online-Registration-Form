@@ -91,7 +91,7 @@
                         </select>
 
                     <label for="zipcode">Zip Code</label>
-                    <input required type="number" id="zipcode" name="user_zipcode" placeholder="Required">
+                    <input type="number" id="zipcode" name="user_zipcode">
                 </div>
             </fieldset>
 
@@ -109,7 +109,7 @@
                     <input type="radio" id="plainTextRadio" name="user_radio" value="plaintextRadio"><label for="plainTextRadio" class="text_style">Plain text</label>
 
                     <p>Other topics you'd like to hear about</p>
-                    <textarea type="text" id="others" name="user_other_topic"></textarea>
+                    <textarea required id="others" name="user_other_topic" placeholder="Required"></textarea>
             </fieldset>
 
             <fieldset>
