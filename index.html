@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Project 3: An Online Registration Form</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
@@ -20,20 +20,20 @@
                 <legend>Contact Information</legend>
                 <div class="first_section">
 
-                    <label>Full Name</label>
+                    <label for="name">Full Name</label>
                     <input required type="text" id="name" name="user_name" placeholder="Required"><br>
 
-                    <label>Email Address</label>
-                    <input required type="text" id="email" name="user_email" placeholder="Required"><br>
+                    <label for="email">Email Address</label>
+                    <input required type="email" id="email" name="user_email" placeholder="Required"><br>
 
-                    <label>Phone Number</label>
-                    <input type="text" id="phone" name="user_phone">
+                    <label for="phone">Phone Number</label>
+                    <input required type="tel" id="phone" name="user_phone" placeholder="Required">
 
-                    <label>Street Address</label>
-                    <input type="text" id="address" name="user_name">
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="user_address">
 
-                    <label>City</label>
-                    <input type="text" id="city" name="user_name">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user_city">
 
                     <label for="states">State</label>
                         <select id="states" name="all_states">
@@ -90,8 +90,8 @@
                             <option>Wyoming</option>
                         </select>
 
-                    <label>Zip Code</label>
-                    <input type="text" id="zipcode" name="user_zipcode">
+                    <label for="zipcode">Zip Code</label>
+                    <input type="number" id="zipcode" name="user_zipcode">
                 </div>
             </fieldset>
 
@@ -109,11 +109,11 @@
                     <input type="radio" id="plainTextRadio" name="user_radio" value="plaintextRadio"><label for="plainTextRadio" class="text_style">Plain text</label>
 
                     <p>Other topics you'd like to hear about</p>
-                    <textarea id="others" name="user_other_topic"></textarea>
+                    <textarea type="text" id="others" name="user_other_topic"></textarea>
             </fieldset>
 
             <fieldset>
-                <button type="submit">Sign Up</button>
+                <button type="submit" value="submit">Sign Up</button>
                 <div class="bottom_note">Copyright The Code Review</div>
             </fieldset>
         </form>

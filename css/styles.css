@@ -3,7 +3,7 @@
 }
 
 body{
-    width:100%;
+    width: 100%;
     display:flex;
     flex:1;
     flex-direction: column;
@@ -112,7 +112,9 @@ div{
 }
 
 /*Set the placeholder to the right*/
-input[type="text"]::placeholder{
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder{
     font-style: italic;
     text-align: right;
 }
@@ -206,6 +208,7 @@ input:focus,
 select:focus,
 textarea:focus{
     border: 2px solid rgb(29, 48, 156);
+    border-left: 10px solid rgb(29, 48, 156);
     outline: none;
     transition: 0.8s;
     background-color: white;
@@ -438,6 +441,9 @@ button:hover::before{
 
 
 @media(min-width: 768px){
+    body{
+        max-width: 1400px;
+    }
 
     .first_section{
         width: 100%;
@@ -459,7 +465,7 @@ button:hover::before{
 
     input[id="zipcode"]{
         flex-grow: 0;
-        flex-basis: 200px;
+        flex-basis: 300px;
         margin-right: auto;
     }
 }
