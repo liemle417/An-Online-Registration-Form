@@ -471,4 +471,11 @@ button:hover::before{
         flex-basis: 300px;
         margin-right: auto;
     }
+
+    /*Re-position the small circle*/
+
+    input[type="radio"] + label::after{
+        left: -23.5px;
+        top: 6.5px;
+    }
 }
