@@ -114,9 +114,11 @@ div{
 /*Set the placeholder to the right*/
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
-input[type="tel"]::placeholder{
+input[type="tel"]::placeholder,
+input[type="number"]::placeholder{
     font-style: italic;
     text-align: right;
+    color: rgb(175, 174, 174);
 }
 
 
@@ -442,7 +444,7 @@ button:hover::before{
 
 @media(min-width: 768px){
     body{
-        max-width: 1400px;
+        max-width: 1140px;
     }
 
     .first_section{
